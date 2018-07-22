@@ -1,0 +1,46 @@
+body,html{
+  font-family:Arial,sans-serif;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+#map{
+  height:100%;
+}
+
+.parent{
+  display:flex;
+  flex-wrap: wrap;
+  height:100%;
+  width:100%;
+  padding-right: :1%;
+  font-size:1em;
+}
+
+.left{
+  display:flex;
+  width:25%;
+  height:100%;
+  order:1;
+  flex-direction: column;
+  padding:1%;
+}
+
+.right{
+  width:70%;
+  height:100%;
+  order:2;
+}
+
+input[type="text"].input,textarea {
+
+  background-color : #FFFFE0;
+
+}
+
+.divider{
+  border-top: 1px solid #a3aeba;
+  border-bottom: 1px solid #a3aeba;
+
+}
