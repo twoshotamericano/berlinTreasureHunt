@@ -1,0 +1,19 @@
+{
+  "name": "berlintreasurehunt",
+  "version": "1.0.0",
+  "description": "This app is for visualising whether a property in Berlin is good value or not.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twoshotamericano/berlinTreasureHunt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twoshotamericano/berlinTreasureHunt/issues"
+  },
+  "homepage": "https://github.com/twoshotamericano/berlinTreasureHunt#readme"
+}
