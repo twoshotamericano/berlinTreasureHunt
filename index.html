@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ed Anderson App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="parent">
+      <div class="left">
+        <h1>Macro Analysis</h1>
+
+        <button id="show-listings" type="button" class="btn btn-info">Show Listings</button>
+        <button id="hide-listings" type="button" class="btn btn-info">Hide Listings</button>
+        <span style="margin:10px"></span>
+        <h2>Address of Property</h2>
+          <input type="text" class="form-control" placeholder="Property Address" id="address-input">
+          <button class="btn btn-info" type="button" id="address-geocode">Search</button>
+        <h2>Places of Interest</h2>
+        <div class="btn-group-vertical" role="group" aria-label="Basic example" id="map-buttons">
+          <button type="button" class="btn btn-info" id="default-map">Default</button>
+          <button type="button" class="btn btn-info" id="park-map">Parks</button>
+          <button type="button" class="btn btn-info" id="hospital-map">Hospital</button>
+          <button type="button" class="btn btn-info" id="school-map">Schools</button>
+          <button type="button" class="btn btn-info" id="trainStation-map">Train Lines</button>
+          <button type="button" class="btn btn-info" id="localAttractions-map">Local Attractions</button>
+        </div>
+        <h2>Calculations</h2>
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td><input type="text" class="form-control" placeholder="Base Price (€)" id="price-input"></td>
+          </tr>
+          <tr>
+            <td>Deposit</td>
+            <td><input type="text" class="form-control" placeholder="(€)" id="deposit-input"></td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td><input type="text" class="form-control" placeholder="sqm" id="size-input"></td>
+          </tr>
+          <tr>
+            <td>Commission</td>
+            <td><input type="text" class="form-control" placeholder="Makler (%)" id="makler-input"></td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td><input type="text" class="form-control" placeholder="Tax (%)" id="tax-input"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="button" class="btn btn-info" style="width:100%" id="calculate-results">Calculate Results</button></td>
+          </tr>
+          <tr>
+            <td>Purchase Cost (€)</td>
+            <td><input type="text" class="form-control"  id="price-result"></td>
+          </tr>
+          <tr>
+            <td>Price (€ psqm)</td>
+            <td><input type="text" class="form-control"  id="size-result"></td>
+          </tr>
+          <tr>
+            <td>Monthly Pmt (€)</td>
+            <td><input type="text" class="form-control"  id="payment-result"></td>
+          </tr>
+          <tr>
+            <td>Interest Pmt (€)</td>
+            <td><input type="text" class="form-control"  id="interest-result"></td>
+          </tr>
+        </table>
+
+        </div>
+        <div id="map" class="right"></div>
+    </div>
+    <script src="mapStyles.js"></script>
+    <script src="calculations.js"></script>
+    <script src="main.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkX7ApFu7HO_eDDpoqlxO3ToAq63VXGmM&callback=initMap">
+    </script>
+  </body>
+</html>

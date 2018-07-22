@@ -1,0 +1,29 @@
+body,html{
+  font-family:Arial,sans-serif;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+#map{
+  height:100%;
+}
+
+.parent{
+  display:flex;
+  flex-wrap: wrap;
+  height:100%;
+  width:100%;
+}
+
+.left{
+  display:flex;
+  width:20%;
+  order:1;
+  flex-direction: column;
+}
+
+.right{
+  width:80%;
+  order:2;
+}
